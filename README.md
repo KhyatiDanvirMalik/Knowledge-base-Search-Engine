@@ -1,4 +1,4 @@
-# Knowledge Base Search Engine — Gemini Edition (Ready-to-Run)
+# Knowledge Base Search Engine
 
 A Retrieval-Augmented Generation (RAG) app that lets you upload PDFs and ask questions.
 This edition uses **Google Gemini (free API)** for answering with retrieved context.
