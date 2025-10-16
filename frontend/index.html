@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Knowledge Base Search Help Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header-bg">
+    <header>
+      <div class="top-bar">
+        <span class="logo">🔍 Knowledge Help Center</span>
+        <div class="top-buttons">
+          <button class="btn secondary">Contact us</button>
+          <button class="btn primary">Sign up</button>
+        </div>
+      </div>
+      <h1>Hi, how can we help?</h1>
+      <form id="search-form">
+        <input type="text" placeholder="Find anything (e.g., document, topic or FAQ)" id="search-bar"/>
+        <button type="submit" class="btn search-btn">Search</button>
+      </form>
+      <div class="common-topics">
+        Common topics: <a href="#">Document upload</a>, <a href="#">Ask questions</a>, <a href="#">Settings</a>
+      </div>
+      <!-- Decorative Blobs -->
+      <div class="decor-blobs"></div>
+    </header>
+  </div>
+
+  <main>
+    <section class="cards">
+      <div class="card getting-started">
+        <div class="card-icon">🚀</div>
+        <h3>Getting started</h3>
+        <p>Welcome to the Knowledge Engine! Begin by uploading your PDF documents and exploring the features.</p>
+        <form id="upload-form">
+          <input type="file" accept=".pdf" id="file-input"/>
+          <button class="btn small" type="submit">Upload PDF</button>
+        </form>
+        <div id="upload-status"></div>
+        <ul id="document-list"></ul>
+      </div>
+      <div class="card using-kb">
+        <div class="card-icon">💡</div>
+        <h3>Using Knowledge Base</h3>
+        <p>Ask questions in natural language. Try: "Summarize this document" or "What are the key points?"</p>
+        <textarea id="query-input" rows="2" placeholder="Ask your question here..."></textarea>
+        <button class="btn primary small" id="query-btn">Find Answer</button>
+        <div id="loading" hidden>Loading...</div>
+        <div id="answer-section" hidden>
+          <div class="ai-answer-label">AI Answer</div>
+          <div id="answer-text"></div>
+          <div class="sources-label">Sources:</div>
+          <ul id="sources-list"></ul>
+        </div>
+      </div>
+      <div class="card profile">
+        <div class="card-icon">👤</div>
+        <h3>Your Profile &amp; History</h3>
+        <p>Review your recent queries, clear history, or manage your preferences for a personalized experience.</p>
+        <ul id="query-history"></ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <span>&copy; 2025 Knowledge Base Search Engine — Beautifully inspired by Slack</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
