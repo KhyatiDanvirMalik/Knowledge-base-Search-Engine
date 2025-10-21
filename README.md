@@ -1,13 +1,13 @@
 # Knowledge Base Search Engine
 
 A Retrieval-Augmented Generation (RAG) app that lets you upload PDFs and ask questions.
-This edition uses **Google Gemini (free API)** for answering with retrieved context.
+This edition uses **Google Gemini ** for answering with retrieved context.
 
 ## Quick Start
 
 ```bash
 pip install -r requirements.txt
-export GEMINI_API_KEY="YOUR_FREE_GEMINI_KEY"
+export GEMINI_API_KEY="YOUR_GEMINI_KEY"
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
